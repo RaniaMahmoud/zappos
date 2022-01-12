@@ -5,9 +5,13 @@
             <script src="https://kit.fontawesome.com/a370c51818.js" crossorigin="anonymous"></script>
             <!-- Bootstrap CSS -->
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-            <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
-            <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-            <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+            <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
             <title>
                 Zappos
             </title>
@@ -17,7 +21,7 @@
             <header id="Home-Page-Header">
                     <div id="Logo">
                         <a href="index.html">
-                            <img src="https://m.media-amazon.com/images/G/01/zappos/melody/zapposPBS._CB1509642213_.svg" name="Zappos" id="Zappos" alt="Zappos" height="50%">
+                            <img src="https://m.media-amazon.com/images/G/01/zappos/melody/zapposPBS._CB1509642213_.svg" name="Zappos" id="Zappos" alt="Zappos" height="50">
                         </a>
                     </div>
                     <div id="search">
@@ -1395,10 +1399,10 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-3 LeftSide">
+                        <div class="col-2 LeftSide">
                             <div class="row">
                                 <div class="col-12">
-                                    <div class="card Cardpalce" style="width: 13.5rem;">
+                                    <div class="card Cardpalce" style="width: 13rem;">
                                         <div class="card-body">
                                             <div class="row">
                                                 <div class="col-12">
@@ -1419,142 +1423,1350 @@
                                 <div class="col-12">
                                     <div id="accordion-resizer">
                                         <div id="accordion" class="accordion">
-                                        <h3>Women’s Size</h3>
+                                        <h3 id="WomenSize" class="filter" data-click="0">Women’s Size<i class="fas fa-sort-down"></i> <i class="fas fa-sort-up"></i></h3>
                                         <div>
-                                          <p>
-                                          Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                                          ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                                          amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                                          odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-                                          </p>
+                                            <div class="conttain fontSize">
+                                                <!-- <button class="NewBtnStyle"> 0.5</button>
+                                                <button class="NewBtnStyle"> 0.5</button>
+                                                <button class="NewBtnStyle"> 1</button>
+                                                <button class="NewBtnStyle"> 10</button>
+                                                <button class="NewBtnStyle"> 0.5</button>
+                                                <button class="NewBtnStyle"> 0.5</button>
+                                                <button class="NewBtnStyle"> 0.5</button>
+                                                <button class="NewBtnStyle"> 0.5</button>
+                                                <button class="NewBtnStyle"> 0.5</button>
+                                                <button class="NewBtnStyle"> 0.5</button>
+                                                <button class="NewBtnStyle"> 0.5</button>
+                                                <button class="NewBtnStyle"> 0.5</button> -->
+                                                <div class="row">
+                                                    <div class="col-3 fontSize">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> 0.5</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> 0.5</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> 0.5</button>
+                                                        </div>                                                
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> 0.5</button>
+                                                        </div>                                                
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> 0.5</button>
+                                                        </div>                                                
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> 0.5</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> 1</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> 1</button>
+                                                        </div>                                                
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> 1</button>
+                                                        </div>                                                
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> 1</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> 1</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> 1</button>
+                                                        </div>                                                
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> 1</button>
+                                                        </div>                                                
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> 1</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> 4</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> 10</button>
+                                                        </div>                                                
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <h3>Women’s Width</h3>
+                                        <h3 id="WomenWidth" class="filter" data-click="0">Women’s Width<i class="fas fa-sort-down"></i> <i class="fas fa-sort-up"></i></h3>
                                         <div>
-                                          <p>
-                                          Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-                                          purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-                                          velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-                                          suscipit faucibus urna.
-                                          </p>
+                                            <div class="conttain fontSize">
+                                                <!-- <button class="NewBtnStyle"> 0.5</button>
+                                                <button class="NewBtnStyle"> 0.5</button>
+                                                <button class="NewBtnStyle"> 1</button>
+                                                <button class="NewBtnStyle"> 10</button>
+                                                <button class="NewBtnStyle"> 0.5</button>
+                                                <button class="NewBtnStyle"> 0.5</button>
+                                                <button class="NewBtnStyle"> 0.5</button>
+                                                <button class="NewBtnStyle"> 0.5</button>
+                                                <button class="NewBtnStyle"> 0.5</button>
+                                                <button class="NewBtnStyle"> 0.5</button>
+                                                <button class="NewBtnStyle"> 0.5</button>
+                                                <button class="NewBtnStyle"> 0.5</button> -->
+                                                <div class="row">
+                                                    <div class="col-3 fontSize">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> MX</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> XXL</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> XX</button>
+                                                        </div>                                                
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> x</button>
+                                                        </div>                                                
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> M0.5</button>
+                                                        </div>                                                
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> L0.5</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> M1</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> M</button>
+                                                        </div>                                                
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
                                         </div>
-                                        <h3>Men’s Size</h3>
+                                        <h3 id="MenWidth" class="filter" data-click="0">Men’s Size<i class="fas fa-sort-down"></i> <i class="fas fa-sort-up"></i></h3>
                                         <div>
-                                          <p>
-                                          Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-                                          Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-                                          ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-                                          lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-                                          </p>
-                                          <ul>
-                                            <li>List item one</li>
-                                            <li>List item two</li>
-                                            <li>List item three</li>
-                                          </ul>
+                                            <div class="conttain fontSize">
+                                                <div class="row">
+                                                    <div class="col-3 fontSize">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> MX</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> XXL</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> XX</button>
+                                                        </div>                                                
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="BtnStyle">
+                                                            <button class="MyBtnStyle"> x</button>
+                                                        </div>                                                
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <h3>Gender</h3>
+                                        <h3 id="Gender" class="filter" data-click="0">Gender <i class="fas fa-sort-down"></i> <i class="fas fa-sort-up"></i></h3>
                                         <div>
-                                          <p>
-                                          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                                          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                                          faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                                          mauris vel est.
-                                          </p>
-                                          <p>
-                                          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-                                          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                                          inceptos himenaeos.
-                                          </p>
+                                            <div class="FilterColor" >
+                                                <div class="">
+                                                    <a href="">Women(10410)</a>
+
+                                                </div>
+                                                <div class="FilterPading">
+                                                    <a href="" >Men(4435)</a>
+  
+                                                </div>
+                                                <div class="FilterPading">
+                                                    <a href=""> Girls(1804)</a>
+ 
+                                                </div>
+                                                <div class="FilterPading">
+                                                    <a href="">Boys(1220)</a>
+
+                                                </div>
+                                            </div>
                                         </div>
-                                        <h3>Category</h3>
-                                        <div>
-                                          <p>
-                                          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                                          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                                          faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                                          mauris vel est.
-                                          </p>
-                                          <p>
-                                          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-                                          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                                          inceptos himenaeos.
-                                          </p>
+                                        <h3 id="Category" class="filter" data-click="0">Category <i class="fas fa-sort-down "></i> <i class="fas fa-sort-up"></i>
+                                        </h3>
+                                        <div style="overflow:auto;">
+                                            <div class="col-auto"  id="xx" style="position: absolute; width: 12.5%; background-color: #fff;">
+                                                <input id="SearchCategory" type="text" class="form-control shadow-none" placeholder="Search Category"/>
+                                            </div>
+                                            <div class="CategoryFilter">
+                                                  <div class="pt-5">
+
+                                                    <div class="KidsSizeFilter">
+                                                        <div class="form-check">
+                                                            <div id="wrapper">
+                                                            </div>
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                              Infant(17)
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                               Infant(65)
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                              Toddler(27)
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                              Toddler(246)
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                              Toddler(66)
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                               Little Kid(120)
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                              Little Kid(770)
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                              Toddler(823)
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                              Toddler(93)
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                              Toddler(823)
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                              Toddler(93)
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                              Toddler(823)
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                              Toddler(93)
+                                                            </label>
+                                                          </div>
+                                                    </div>
+                                                </div>  
+                                            </div>
                                         </div>
-                                        <h3>Brand</h3>
-                                        <div>
-                                          <p>
-                                          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                                          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                                          faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                                          mauris vel est.
-                                          </p>
-                                          <p>
-                                          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-                                          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                                          inceptos himenaeos.
-                                          </p>
+
+                                        <h3 id="Brand" class="filter" data-click="0">Brand <i class="fas fa-sort-down"></i> <i class="fas fa-sort-up"></i></h3>
+                                        <div style="overflow:auto;">
+                                            <div class="col-auto"  id="xx" style="position: absolute; width: 12.5%; background-color: #fff;">
+                                                <input id="SearchCategory" type="text" class="form-control shadow-none" placeholder="Search Category"/>
+                                            </div>
+                                            <div class="CategoryFilter">
+                                                  <div class="pt-5">
+                                                    <div class="KidsSizeFilter">
+                                                        <div class="form-check">
+                                                            <div id="wrapper">
+                                                            </div>
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Narrow Your Brand choices
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                42 GOLD(55)
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                5.11 Tactical(24)
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                A.S. 98(32)
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                Abercrombie & Fitch Shoes(6)
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                ABLE(1)
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                ACE Work Boots(22)
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                Academie Gear(1)
+                                                                
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                         
+                                                                Acorn(157)
+                                                            </label>
+                                                          </div>
+                                                    </div>
+                                                </div>  
+                                            </div>
                                         </div>
-                                        <h3>Single Shoes</h3>
-                                        <div>
-                                          <p>
-                                          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                                          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                                          faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                                          mauris vel est.
-                                          </p>
-                                          <p>
-                                          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-                                          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                                          inceptos himenaeos.
-                                          </p>
+                                        <h3 id="SingleShoes" class="filter" data-click="0">Style <i class="fas fa-sort-down"></i> <i class="fas fa-sort-up"></i></h3>
+                                        <div style="overflow:auto;">
+                                            <div class="col-auto"  id="xx" style="position: absolute; width: 12.5%; background-color: #fff;">
+                                                <input id="SearchCategory" type="text" class="form-control shadow-none" placeholder="Search Category"/>
+                                            </div>
+                                            <div class="CategoryFilter">
+                                                  <div class="pt-5">
+                                                    <div class="KidsSizeFilter">
+                                                        <div class="form-check">
+                                                            <div id="wrapper">
+                                                            </div>
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                High Tops(1725)
+                                                                
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                Slingback(1771)
+                                                                
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                Mules(2540)
+
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                Wedges(3231)
+
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                Slide(3915)
+
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                Euro(3969)
+
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                Platform(4866)
+
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                Athletic(7093)
+
+                                                                
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                         
+                                                                Comfort(20836)
+
+                                                            </label>
+                                                          </div>
+                                                    </div>
+                                                </div>  
+                                            </div>
                                         </div>
-                                        <h3>Kids' Sizes</h3>
+                                        <h3 id="KidsSize" class="filter" data-click="0">Kids' Sizes <i class="fas fa-sort-down"></i> <i class="fas fa-sort-up"></i></h3>
                                         <div>
-                                          <p>
-                                          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                                          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                                          faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                                          mauris vel est.
-                                          </p>
-                                          <p>
-                                          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-                                          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                                          inceptos himenaeos.
-                                          </p>
+                                            <div class="p-0">
+                                                <div class="KidsSizeFilter">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                          Infant(17)
+                                                        </label>
+                                                      </div>
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                           Infant(65)
+                                                        </label>
+                                                      </div>
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                          Toddler(27)
+                                                        </label>
+                                                      </div>
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                          Toddler(246)
+                                                        </label>
+                                                      </div>
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                          Toddler(66)
+                                                        </label>
+                                                      </div>
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                           Little Kid(120)
+                                                        </label>
+                                                      </div>
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                          Little Kid(770)
+                                                        </label>
+                                                      </div>
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                          Toddler(823)
+                                                        </label>
+                                                      </div>
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                          Toddler(93)
+                                                        </label>
+                                                      </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <h3>Kids' Sizes</h3>
-                                        <div>
-                                          <p>
-                                          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                                          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                                          faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                                          mauris vel est.
-                                          </p>
-                                          <p>
-                                          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-                                          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                                          inceptos himenaeos.
-                                          </p>
+                                        <h3 class="filter"  data-click="0">Price <i class="fas fa-sort-down"></i> <i class="fas fa-sort-up"></i></h3>
+                                        <div style="overflow:auto;">
+                                            <div class="col-auto"  id="xx" style="position: absolute; width: 12.5%; background-color: #fff;">
+                                                <input id="SearchCategory" type="text" class="form-control shadow-none" placeholder="Search Category"/>
+                                            </div>
+                                            <div class="CategoryFilter">
+                                                  <div class="pt-5">
+                                                    <div class="KidsSizeFilter">
+                                                        <div class="form-check">
+                                                            <div id="wrapper">
+                                                            </div>
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                $50.00 and Under(12661)
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                $100.00 and Under(39656)
+
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                $200.00 and Under(62995)
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                $200.00 and Over(4894)
+                                                            </label>
+                                                          </div>
+                                                          
+                                                    </div>
+                                                </div>  
+                                            </div>
                                         </div>
-                                        <h3>Kids' Sizes</h3>
-                                        <div>
-                                          <p>
-                                          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                                          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                                          faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                                          mauris vel est.
-                                          </p>
-                                          <p>
-                                          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-                                          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                                          inceptos himenaeos.
-                                          </p>
+                                        <h3 class="filter" data-click="0">Color<i class="fas fa-sort-down text-end"></i> <i class="fas fa-sort-up"></i></h3>
+                                        <div style="overflow:auto;">
+                                            <div class="col-auto"  id="xx" style="position: absolute; width: 12.5%; background-color: #fff;">
+                                                <input id="SearchCategory" type="text" class="form-control shadow-none" placeholder="Search Category"/>
+                                            </div>
+                                            <div class="CategoryFilter">
+                                                  <div class="pt-5">
+                                                    <div class="KidsSizeFilter">
+                                                        <div class="form-check">
+                                                            <div id="wrapper">
+                                                            </div>
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Black(19542)
+
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                Brown(8092)
+
+
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                Gray(5684)
+
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                White(4929)
+                                                                Blue(4276)
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <div id="wrapper">
+                                                            </div>
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Tan(3183)
+
+
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                Navy(2843)
+
+
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                Multi(2668)
+
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                Pink(2215)
+
+                                                            </label>
+                                                          </div>
+                                                    </div>
+                                                </div>  
+                                            </div>
                                         </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-9 RightSide">
+                        <div class="col-10 RightSide">
+                            <div class="row selectionPart" id="RightSide-Section-One">
+                                <div class="col-12">
+                                    Your Selection
+                                </div>
+                            </div>
+                            <div class="row" id="RightSide-Section-two">
+                                <div class="col-1">
+                                    <div class="SelctionStyle DivSelctionStyle">Shoes<i class="fas fa-times-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="SelctionStyle">Women</div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="SelctionStyle">Men</div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="SelctionStyle">Girls</div>
+                                </div>
+                            </div>
+                            <div class="row ProductPart" id="RightSide-Section-three">
+                                <div class="col-3 p-0 Product-Col1 P1">
+                                    <div class="card Product1" style="width: 19rem;">
+                                        <div class="heart" id="h1">
+                                            <i class="far fa-heart">&nbsp;2</i> 
+                                        </div>                                         
+                                        <img src="source/productImages/S1.jpg" class="card-img-top" alt="..." height="350hv" width="100%">
+                                        <div class="card-body">
+                                            <div class="row ProductColor" id="P1">
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S1.jpg" alt="...">      
+                                                </div>
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S10.jpg"  alt="...">      
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="source/productImages/S3.jpg"  alt="...">      
+                                                </div>
+                                            </div>
+                                            <div class="row ProductName">
+                                                <div class="col-12">
+                                                    <a href="#">Heelys</a>
+                                                </div>
+                                            </div> 
+                                            <div class="row ProductDiscription">
+                                                <div class="col-12">
+                                                   Pro 20 Prints (Litile Kid/Big Kid/Adult)
+                                                </div>
+                                            </div>
+                                            <div class="row ProductPrice">
+                                                <div class="col-12">
+                                                    $55.00
+                                                </div>
+                                            </div>  
+                                            <div class="row ProductEvaluat">
+                                                <div class="col-12">
+                                                    <i class="fas fa-star" style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star" style="color:rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>&nbsp;&nbsp;(2)
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-0 Product-Col2 P2">
+                                    <div class="card Product2" style="width: 19rem;">
+                                        <div class="heart" id="h2">
+                                            <i class="far fa-heart">&nbsp;2</i> 
+                                        </div>                                         
+                                        <img src="source/productImages/S2.jpg" class="card-img-top" alt="..." height="350hv" width="100%">
+                                        <div class="card-body">
+                                            <div class="row ProductColor" id="P2">
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S2.jpg" class="Product1-FImg" alt="...">      
+                                                </div>
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S5.jpg" class="Product1-ScImg" alt="...">      
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="source/productImages/S6.jpg" class="Product1-ThImg"  alt="...">      
+                                                </div>
+                                            </div>
+                                            <div class="row ProductName">
+                                                <div class="col-12">
+                                                    <a href="#">SUAVS</a>
+                                                </div>
+                                            </div> 
+                                            <div class="row ProductDiscription">
+                                                <div class="col-12">
+                                                   Pro 20 Prints (Litile Kid/Big Kid/Adult)
+                                                </div>
+                                            </div>
+                                            <div class="row ProductPrice">
+                                                <div class="col-12">
+                                                    $55.00
+                                                </div>
+                                            </div>  
+                                            <div class="row ProductEvaluat">
+                                                <div class="col-12">
+                                                    <i class="fas fa-star" style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star" style="color:gainsboro"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>&nbsp;&nbsp;(2)
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-0 Product-Col3 P3">
+                                    <div class="card Product3" style="width: 19rem;">
+                                        <div class="heart" id="h3">
+                                            <i class="far fa-heart">&nbsp;2</i> 
+                                        </div>                                         
+                                        <img src="source/productImages/S3.jpg" class="card-img-top" alt="..." height="350hv" width="100%">
+                                        <div class="card-body">
+                                            <div class="row ProductColor" id="P3">
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S3.jpg" alt="...">      
+                                                </div>
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S8.jpg"  alt="...">      
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="source/productImages/S9.jpg"  alt="...">      
+                                                </div>
+                                            </div>
+                                            <div class="row ProductName">
+                                                <div class="col-12">
+                                                    <a href="#">OOFOS </a>
+                                                </div>
+                                            </div> 
+                                            <div class="row ProductDiscription">
+                                                <div class="col-12">
+                                                   Pro 20 Prints (Litile Kid/Big Kid/Adult)
+                                                </div>
+                                            </div>
+                                            <div class="row ProductPrice">
+                                                <div class="col-12">
+                                                    $55.00
+                                                </div>
+                                            </div>  
+                                            <div class="row ProductEvaluat">
+                                                <div class="col-12">
+                                                    <i class="fas fa-star" style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star" style="color:rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>&nbsp;&nbsp;(2)
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-0 Product-Col4 P4">
+                                    <div class="card Product4" style="width: 19rem;">
+                                        <div class="heart" id="h4">
+                                            <i class="far fa-heart">&nbsp;2</i> 
+                                        </div>                                         
+                                        <img src="source/productImages/S4.jpg" class="card-img-top" alt="..." height="350hv" width="100%">
+                                        <div class="card-body">
+                                            <div class="row ProductColor" id="P4">
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S4.jpg" alt="...">      
+                                                </div>
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S11.jpg"  alt="...">      
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="source/productImages/S12.jpg"  alt="...">      
+                                                </div>
+                                            </div>
+                                            <div class="row ProductName">
+                                                <div class="col-12">
+                                                    <a href="#">Birkenstock </a>
+                                                </div>
+                                            </div> 
+                                            <div class="row ProductDiscription">
+                                                <div class="col-12">
+                                                   Pro 20 Prints (Litile Kid/Big Kid/Adult)
+                                                </div>
+                                            </div>
+                                            <div class="row ProductPrice">
+                                                <div class="col-12">
+                                                    $55.00
+                                                </div>
+                                            </div>  
+                                            <div class="row ProductEvaluat">
+                                                <div class="col-12">
+                                                    <i class="fas fa-star" style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star" style="color:rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>&nbsp;&nbsp;(2)
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ProductPart" id="RightSide-Section-three">
+                                <div class="col-3 p-0 Product-Col1 P5">
+                                    <div class="card Product5" style="width: 19rem;">
+                                        <div class="heart" id="h5">
+                                            <i class="far fa-heart">&nbsp;2</i> 
+                                        </div>                                         
+                                        <img src="source/productImages/S5.jpg" class="card-img-top" alt="..." height="350hv" width="100%">
+                                        <div class="card-body">
+                                            <div class="row ProductColor" id="P5">
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S5.jpg" alt="...">      
+                                                </div>
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S10.jpg"  alt="...">      
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="source/productImages/S3.jpg"  alt="...">      
+                                                </div>
+                                            </div>
+                                            <div class="row ProductName">
+                                                <div class="col-12">
+                                                    <a href="#">Birkenstock </a>
+                                                </div>
+                                            </div> 
+                                            <div class="row ProductDiscription">
+                                                <div class="col-12">
+                                                   Pro 20 Prints (Litile Kid/Big Kid/Adult)
+                                                </div>
+                                            </div>
+                                            <div class="row ProductPrice">
+                                                <div class="col-12">
+                                                    $88.00
+                                                </div>
+                                            </div>  
+                                            <div class="row ProductEvaluat">
+                                                <div class="col-12">
+                                                    <i class="fas fa-star" style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star" style="color:rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color:rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>&nbsp;&nbsp;(2)
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-0 Product-Col2 P6">
+                                    <div class="card Product6" style="width: 19rem;">
+                                        <div class="heart" id="h6">
+                                            <i class="far fa-heart">&nbsp;2</i> 
+                                        </div>                                         
+                                        <img src="source/productImages/S6.jpg" class="card-img-top" alt="..." height="350hv" width="100%">
+                                        <div class="card-body">
+                                            <div class="row ProductColor" id="P6">
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S6.jpg" class="Product1-FImg" alt="...">      
+                                                </div>
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S5.jpg" class="Product1-ScImg" alt="...">      
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="source/productImages/S10.jpg" class="Product1-ThImg"  alt="...">      
+                                                </div>
+                                            </div>
+                                            <div class="row ProductName">
+                                                <div class="col-12">
+                                                    <a href="#">Birkenstock </a>
+                                                </div>
+                                            </div> 
+                                            <div class="row ProductDiscription">
+                                                <div class="col-12">
+                                                   Pro 20 Prints (Litile Kid/Big Kid/Adult)
+                                                </div>
+                                            </div>
+                                            <div class="row ProductPrice">
+                                                <div class="col-12">
+                                                    $77.00
+                                                </div>
+                                            </div>  
+                                            <div class="row ProductEvaluat">
+                                                <div class="col-12">
+                                                    <i class="fas fa-star" style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star" style="color:rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>&nbsp;&nbsp;(2)
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-0 Product-Col3 P7">
+                                    <div class="card Product7" style="width: 19rem;">
+                                        <div class="heart" id="h7">
+                                            <i class="far fa-heart">&nbsp;2</i> 
+                                        </div>                                         
+                                        <img src="source/productImages/S7.jpg" class="card-img-top" alt="..." height="350hv" width="100%">
+                                        <div class="card-body">
+                                            <div class="row ProductColor" id="P7">
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S7.jpg" alt="...">      
+                                                </div>
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S8.jpg"  alt="...">      
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="source/productImages/S9.jpg"  alt="...">      
+                                                </div>
+                                            </div>
+                                            <div class="row ProductName">
+                                                <div class="col-12">
+                                                    <a href="#">Birkenstock </a>
+                                                </div>
+                                            </div> 
+                                            <div class="row ProductDiscription">
+                                                <div class="col-12">
+                                                   Pro 20 Prints (Litile Kid/Big Kid/Adult)
+                                                </div>
+                                            </div>
+                                            <div class="row ProductPrice">
+                                                <div class="col-12">
+                                                    $125.00
+                                                </div>
+                                            </div>  
+                                            <div class="row ProductEvaluat">
+                                                <div class="col-12">
+                                                    <i class="fas fa-star" style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star" style="color:rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>&nbsp;&nbsp;(2)
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-0 Product-Col4 P8">
+                                    <div class="card Product8" style="width: 19rem;">
+                                        <div class="heart" id="h8">
+                                            <i class="far fa-heart">&nbsp;2</i> 
+                                        </div>                                         
+                                        <img src="source/productImages/S8.jpg" class="card-img-top" alt="..." height="350hv" width="100%">
+                                        <div class="card-body">
+                                            <div class="row ProductColor" id="P8">
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S8.jpg" alt="...">      
+                                                </div>
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S11.jpg"  alt="...">      
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="source/productImages/S12.jpg"  alt="...">      
+                                                </div>
+                                            </div>
+                                            <div class="row ProductName">
+                                                <div class="col-12">
+                                                    <a href="#">Birkenstock </a>
+                                                </div>
+                                            </div> 
+                                            <div class="row ProductDiscription">
+                                                <div class="col-12">
+                                                    Barbados Essentials. Color White EVA.
+                                                </div>
+                                            </div>
+                                            <div class="row ProductPrice">
+                                                <div class="col-12">
+                                                    $92.00
+                                                </div>
+                                            </div>  
+                                            <div class="row ProductEvaluat">
+                                                <div class="col-12">
+                                                    <i class="fas fa-star" style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star" style="color:gainsboro"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>&nbsp;&nbsp;(2)
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ProductPart" id="RightSide-Section-three">
+                                <div class="col-3 p-0 Product-Col1 P9">
+                                    <div class="card Product9" style="width: 19rem;">
+                                        <div class="heart" id="h9">
+                                            <i class="far fa-heart">&nbsp;2</i> 
+                                        </div>                                         
+                                        <img src="source/productImages/S9.jpg" class="card-img-top" alt="..." height="350hv" width="100%">
+                                        <div class="card-body">
+                                            <div class="row ProductColor" id="P9">
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S9.jpg" alt="...">      
+                                                </div>
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S10.jpg"  alt="...">      
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="source/productImages/S3.jpg"  alt="...">      
+                                                </div>
+                                            </div>
+                                            <div class="row ProductName">
+                                                <div class="col-12">
+                                                    <a href="#">Native Shoes</a>
+                                                </div>
+                                            </div> 
+                                            <div class="row ProductDiscription">
+                                                <div class="col-12">
+                                                   Pro 20 Prints (Litile Kid/Big Kid/Adult)
+                                                </div>
+                                            </div>
+                                            <div class="row ProductPrice">
+                                                <div class="col-12">
+                                                    $55.00
+                                                </div>
+                                            </div>  
+                                            <div class="row ProductEvaluat">
+                                                <div class="col-12">
+                                                    <i class="fas fa-star" style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star" style="color:gainsboro"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>&nbsp;&nbsp;(2)
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-0 Product-Col2 P10">
+                                    <div class="card Product10" style="width: 19rem;">
+                                        <div class="heart" id="h10">
+                                            <i class="far fa-heart">&nbsp;2</i> 
+                                        </div>                                         
+                                        <img src="source/productImages/S10.jpg" class="card-img-top" alt="..." height="350hv" width="100%">
+                                        <div class="card-body">
+                                            <div class="row ProductColor" id="P10">
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S10.jpg" class="Product1-FImg" alt="...">      
+                                                </div>
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S5.jpg" class="Product1-ScImg" alt="...">      
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="source/productImages/S6.jpg" class="Product1-ThImg"  alt="...">      
+                                                </div>
+                                            </div>
+                                            <div class="row ProductName">
+                                                <div class="col-12">
+                                                    <a href="#">Native Shoes</a>
+                                                </div>
+                                            </div> 
+                                            <div class="row ProductDiscription">
+                                                <div class="col-12">
+                                                    Ellis. Color Jiffy Black/Cloud Grey.
+                                                </div>
+                                            </div>
+                                            <div class="row ProductPrice">
+                                                <div class="col-12">
+                                                    $55.00
+                                                </div>
+                                            </div>  
+                                            <div class="row ProductEvaluat">
+                                                <div class="col-12">
+                                                    <i class="fas fa-star" style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star" style="color:rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color:rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>&nbsp;&nbsp;(2)
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-0 Product-Col3 P11">
+                                    <div class="card Product11" style="width: 19rem;">
+                                        <div class="heart" id="h11">
+                                            <i class="far fa-heart">&nbsp;2</i> 
+                                        </div>                                         
+                                        <img src="source/productImages/S11.jpg" class="card-img-top" alt="..." height="350hv" width="100%">
+                                        <div class="card-body">
+                                            <div class="row ProductColor" id="P11">
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S11.jpg" alt="...">      
+                                                </div>
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S8.jpg"  alt="...">      
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="source/productImages/S9.jpg"  alt="...">      
+                                                </div>
+                                            </div>
+                                            <div class="row ProductName">
+                                                <div class="col-12">
+                                                    <a href="#">Suicoke </a>
+                                                </div>
+                                            </div> 
+                                            <div class="row ProductDiscription">
+                                                <div class="col-12">
+                                                   Pro 20 Prints (Litile Kid/Big Kid/Adult)
+                                                </div>
+                                            </div>
+                                            <div class="row ProductPrice">
+                                                <div class="col-12">
+                                                    $55.00
+                                                </div>
+                                            </div>  
+                                            <div class="row ProductEvaluat">
+                                                <div class="col-12">
+                                                    <i class="fas fa-star" style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star" style="color:rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>&nbsp;&nbsp;(2)
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-0 Product-Col4 P12">
+                                    <div class="card Product12" style="width: 19rem;">
+                                        <div class="heart" id="h12">
+                                            <i class="far fa-heart">&nbsp;2</i> 
+                                        </div>                                         
+                                        <img src="source/productImages/S12.jpg" class="card-img-top" alt="..." height="350hv" width="100%">
+                                        <div class="card-body">
+                                            <div class="row ProductColor" id="P12">
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S12.jpg" alt="...">      
+                                                </div>
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S11.jpg"  alt="...">      
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="source/productImages/S1.jpg"  alt="...">      
+                                                </div>
+                                            </div>
+                                            <div class="row ProductName">
+                                                <div class="col-12">
+                                                    <a href="#">Vans</a>
+                                                </div>
+                                            </div> 
+                                            <div class="row ProductDiscription">
+                                                <div class="col-12">
+                                                   Pro 20 Prints (Litile Kid/Big Kid/Adult)
+                                                </div>
+                                            </div>
+                                            <div class="row ProductPrice">
+                                                <div class="col-12">
+                                                    $55.00
+                                                </div>
+                                            </div>  
+                                            <div class="row ProductEvaluat">
+                                                <div class="col-12">
+                                                    <i class="fas fa-star" style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star" style="color:gainsboro"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>&nbsp;&nbsp;(2)
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ProductPart" id="RightSide-Section-three">
+                                <div class="col-3 p-0 Product-Col1 P13">
+                                    <div class="card Product13" style="width: 19rem;">
+                                        <div class="heart" id="h13">
+                                            <i class="far fa-heart">&nbsp;2</i> 
+                                        </div>                                         
+                                        <img src="source/productImages/S13.jpg" class="card-img-top" alt="..." height="350hv" width="100%">
+                                        <div class="card-body">
+                                            <div class="row ProductColor" id="P13">
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S1.jpg" alt="...">      
+                                                </div>
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S10.jpg"  alt="...">      
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="source/productImages/S3.jpg"  alt="...">      
+                                                </div>
+                                            </div>
+                                            <div class="row ProductName">
+                                                <div class="col-12">
+                                                    <a href="#">Oka-B </a>
+                                                </div>
+                                            </div> 
+                                            <div class="row ProductDiscription">
+                                                <div class="col-12">
+                                                   Pro 20 Prints (Litile Kid/Big Kid/Adult)
+                                                </div>
+                                            </div>
+                                            <div class="row ProductPrice">
+                                                <div class="col-12">
+                                                    $55.00
+                                                </div>
+                                            </div>  
+                                            <div class="row ProductEvaluat">
+                                                <div class="col-12">
+                                                    <i class="fas fa-star" style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star" style="color:rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>&nbsp;&nbsp;(2)
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-0 Product-Col2 P14">
+                                    <div class="card Product14" style="width: 19rem;">
+                                        <div class="heart" id="h14">
+                                            <i class="far fa-heart">&nbsp;2</i> 
+                                        </div>                                         
+                                        <img src="source/productImages/S14.jpg" class="card-img-top" alt="..." height="350hv" width="100%">
+                                        <div class="card-body">
+                                            <div class="row ProductColor" id="P14">
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S14.jpg" class="Product1-FImg" alt="...">      
+                                                </div>
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S5.jpg" class="Product1-ScImg" alt="...">      
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="source/productImages/S6.jpg" class="Product1-ThImg"  alt="...">      
+                                                </div>
+                                            </div>
+                                            <div class="row ProductName">
+                                                <div class="col-12">
+                                                    <a href="#">adidas </a>
+                                                </div>
+                                            </div> 
+                                            <div class="row ProductDiscription">
+                                                <div class="col-12">
+                                                   Pro 20 Prints (Litile Kid/Big Kid/Adult)
+                                                </div>
+                                            </div>
+                                            <div class="row ProductPrice">
+                                                <div class="col-12">
+                                                    $55.00
+                                                </div>
+                                            </div>  
+                                            <div class="row ProductEvaluat">
+                                                <div class="col-12">
+                                                    <i class="fas fa-star" style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star" style="color:rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>&nbsp;&nbsp;(2)
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-0 Product-Col3 P15">
+                                    <div class="card Product15" style="width: 19rem;">
+                                        <div class="heart" id="h15">
+                                            <i class="far fa-heart">&nbsp;2</i> 
+                                        </div>                                         
+                                        <img src="source/productImages/S15.jpg" class="card-img-top" alt="..." height="350hv" width="100%">
+                                        <div class="card-body">
+                                            <div class="row ProductColor" id="P15">
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S15.jpg" alt="...">      
+                                                </div>
+                                                <div class="col-2">
+                                                    <img src="source/productImages/S8.jpg"  alt="...">      
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="source/productImages/S9.jpg"  alt="...">      
+                                                </div>
+                                            </div>
+                                            <div class="row ProductName">
+                                                <div class="col-12">
+                                                    <a href="#">Reebok Work</a>
+                                                </div>
+                                            </div> 
+                                            <div class="row ProductDiscription">
+                                                <div class="col-12">
+                                                   Pro 20 Prints (Litile Kid/Big Kid/Adult)
+                                                </div>
+                                            </div>
+                                            <div class="row ProductPrice">
+                                                <div class="col-12">
+                                                    $55.00
+                                                </div>
+                                            </div>  
+                                            <div class="row ProductEvaluat">
+                                                <div class="col-12">
+                                                    <i class="fas fa-star" style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color: rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star" style="color:rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color:rgb(253, 218, 18);"></i>
+                                                    <i class="fas fa-star"style="color:gainsboro"></i>&nbsp;&nbsp;(2)
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
