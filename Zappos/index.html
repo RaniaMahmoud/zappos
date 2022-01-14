@@ -12,7 +12,8 @@
             <link rel="stylesheet" href="Css/HomeStyle.css">
         </head>
         <body>
-            <header id="Home-Page-Header">
+            <!-- <header id="Home-Page-Header">
+
                     <div id="Logo">
                         <a href="index.html">
                             <img src="https://m.media-amazon.com/images/G/01/zappos/melody/zapposPBS._CB1509642213_.svg" name="Zappos" id="Zappos" alt="Zappos" height="50%">
@@ -31,7 +32,27 @@
                         <button id="btn-cart"><i class="fas fa-shopping-cart" id="shopping-cart"></i> &nbsp;&nbsp;MY CART</button>
                     </div>
                     <div style="clear:both"></div>
-            </header>
+            </header> -->
+            <header id="Home-Page-Header">
+                <div id="Logo">
+                    <a href="index.html">
+                        <img src="https://m.media-amazon.com/images/G/01/zappos/melody/zapposPBS._CB1509642213_.svg" name="Zappos" id="Zappos" alt="Zappos" height="50">
+                    </a>
+                </div>
+                <div id="search">
+                    <div id="itemSearch" class="">
+                        <i class="fas fa-search"></i>
+                        <input type="search" id="searchBox" name="search" placeholder="Search for shoes, clothes, etc." autocomplete="off">
+                    </div>
+                </div>
+                <div id="search-Button">
+                    <button id="btn-search">Search</button>
+                </div>
+                <div id="Cart-box">
+                    <button id="btn-cart"><i class="fas fa-shopping-cart" id="shopping-cart"></i> &nbsp;&nbsp;MY CART</button>
+                </div>
+                <div style="clear:both"></div>
+            </header>           
             <div style="clear:both"></div>
 
             <div id="section-one">
@@ -48,7 +69,7 @@
                     </a>
                 </div>
                 <div  id="men">
-                    <a id="Men-Btn"data-click="0" href="#">Men
+                    <a id="Men-Btn" data-click="0" href="#">Men
                         <i id="down-icon-Men" class="fas fa-caret-down"></i>
                         <i class="fas fa-caret-up" style="display: none;"></i>                    
                     </a>
@@ -83,11 +104,107 @@
                         <i class="fas fa-caret-up" style="display: none;"></i>
                     </a>
                 </div>
+                
                 <div id="SignIn">
-                    <a href="">SingIn</a>/<a href="">Register</a>
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">SingIn/Register</a>
+                </div>
+                
+            </div>
+
+            <div class="overlay"></div>
+            <div class="modal fade " id="exampleModal"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Sign-in</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-5">
+                            <div class="row">
+                                <div class="col-12 pt-3 ps-3">
+                                    <div class="d-grid gap-2">
+                                        <a class="btn btn-light sigBtn mb-3 " type="button"><i class="fab fa-soundcloud"></i>Sign in with Zappos</a>
+                                        <a class="btn btn-light sigBtn mb-3" type="button"><i class="fab fa-google "></i> Sign in with Google</a>
+                                        <a class="btn btn-light sigBtn mb-3" type="button"><i class="fab fa-amazon"></i>Sign in with Amazon</a>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-5">
+                                            <hr style="width:100%;margin-left: 15%;"/>
+                                          </div>
+                                          <div class="col-1">
+                                              or
+                                        </div>
+                                        <div class="col-6">
+                                            <hr style="width:100%;margin-right: 10%;"/>
+                                        </div>
+
+                                      </div>
+                                      <div class="d-grid gap-2">
+                                        <button class="btn btn-light sigBtn sigBtnLast mb-3" type="button">Create your Zappos Account</button>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1">                     
+                        </div>
+                        <div class="col-5">
+                            <div class="row">
+                                <div class="col-12 pt-3 ">
+                                    <p class="model-content">
+                                        By logging in with Amazon, 
+                                        you may be eligible for additional Prime benefits like FREE Upgraded Shipping. 
+                                        Then, join Zappos VIP for additional Prime-linked VIP perks:
+                                    </p>
+                                    <ul style="list-style: inside;padding-top: 0px;">
+                                        <li>
+                                            If you are an Amazon Prime Member, sign in with Amazon to qualify for free upgraded shipping!
+                                        </li>
+                                        <li>
+                                            Get FREE Expedited Shipping
+                                        </li>
+
+                                        <li>
+                                            Earn 2 Points for Every $1 Spent 
+                                        </li>
+
+                                        <li>
+                                            Redeem Points for VIP Codes
+                                        </li>
+
+                                        <li>
+                                            Receive Bonus Points on Select Brands
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-footer text-center">
+                        <div class="row p-0 footContent">
+                            <div class="col-12 me-5">
+                                <ul>
+                                    <li>By signing in, you agree to Zappos
+                                    </li>
+                                    <li>
+                                        <a href="">Terms and Conditions</a> and<a href="">Privacy Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                      <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                  </div>
                 </div>
             </div>
-            <div class="overlay"></div>
             <div id="New-Category" class="Category">
                 <span id="The-Find">
                     <span id="Box-Find">
@@ -229,7 +346,7 @@
                     </span>
                 </span>
                 <hr class="vertical"/>
-                <i id="close-New" class="fas fa-times"></i> 
+                <i id="close-New1" class="fas fa-times c1"></i> 
                 <div class="class-For-span-float offers">
                     <span id="first-Offer">
                         <img id="Offer-img" src="https://m.media-amazon.com/images/G/01/2021/Global-Nav/December/COOP-ASICS-GT2000-GLOBAL-350x350.jpg">
@@ -383,7 +500,7 @@
                     </span>
                 </span>
                 <hr class="vertical"/>
-                <i id="close-New" class="fas fa-times"></i> 
+                <i id="close-New2" class="fas fa-times c2"></i> 
                 <div class="class-For-span-float offers">
                     <span id="first-Offer">
                         <img id="Offer-img" src="https://m.media-amazon.com/images/G/01/2021/Global-Nav/December/COOP-ASICS-GT2000-GLOBAL-350x350.jpg">
@@ -537,7 +654,7 @@
                     </span>
                 </span>
                 <hr class="vertical"/>
-                <i id="close-New" class="fas fa-times"></i> 
+                <i id="close-New3" class="fas fa-times c3"></i> 
                 <div class="class-For-span-float offers">
                     <span id="first-Offer">
                         <img id="Offer-img" src="https://m.media-amazon.com/images/G/01/2021/Global-Nav/December/COOP-ASICS-GT2000-GLOBAL-350x350.jpg">
@@ -691,7 +808,7 @@
                     </span>
                 </span>
                 <hr class="vertical"/>
-                <i id="close-New" class="fas fa-times"></i> 
+                <i id="close-New4" class="fas fa-times c4"></i> 
                 <div class="class-For-span-float offers">
                     <span id="first-Offer">
                         <img id="Offer-img" src="https://m.media-amazon.com/images/G/01/2021/Global-Nav/December/COOP-ASICS-GT2000-GLOBAL-350x350.jpg">
@@ -845,7 +962,7 @@
                     </span>
                 </span>
                 <hr class="vertical"/>
-                <i id="close-New" class="fas fa-times"></i> 
+                <i id="close-New5" class="fas fa-times c5"></i> 
                 <div class="class-For-span-float offers">
                     <span id="first-Offer">
                         <img id="Offer-img" src="https://m.media-amazon.com/images/G/01/2021/Global-Nav/December/COOP-ASICS-GT2000-GLOBAL-350x350.jpg">
@@ -859,157 +976,132 @@
                 </div>
             </div>
             <div id="Brands-Category" class="Category">
-                <span id="The-Find">
-                    <span id="Box-Find">
-                        <ul id="Find-List" style="margin: 0%;">
+                <i id="close-New6" class="fas fa-times c6"></i> 
+                <div id="" >
+                    <div id="">
+                        <ul id="ul_top_hypers" style="margin: 0%;padding: 7%;">
                             <li id="Find" class="class-Head-List">
-                                <a href="">The Find</a>
+                                <a href="">Brand Index</a>
                             </li>
+                            <br>
+                            <br>
+                            <br>
 
-                            <li class="class-For-Find-List" id="Cozy Shop">
-                                <a class="class-For-link" href="">The Cozy Shop</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <a class="class-For-link" href="">#</a>
                             </li>
-                            <li class="class-For-Find-List" id="Loungewear">
-                                <a href="" class="class-For-link">The Cozy Loungewear Edit</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <a class="class-For-link" href="">A</a>
                             </li>
-                            <li class="class-For-Find-List" id="Cold-Weather">
-                                <a href="" class="class-For-link">Look Cute In Cold Weather</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <a href="" class="class-For-link">B</a>
                             </li>
-                            <li class="class-For-Find-List" id="Chilly-Campouts">
-                                <a href="" class="class-For-link">Chill Fits for Chilly Campouts</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <a href="" class="class-For-link">C</a>
                             </li>
-                            <li class="class-For-Find-List" id="Cozy-Looks">
-                                <a href="" class="class-For-link">Luxe Cozy Looks</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <a href="" class="class-For-link">D</a>
                             </li>
-                            <li class="class-For-Find-List" id="Winter">
-                                <a href="" class="class-For-link">The Fall/Winter Plus-Size Edit</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <a href="" class="class-For-link">E</a>
                             </li>
-                            <li class="class-For-Find-List" id="Ultimate-Boot-Guide">
-                                <a href="" class="class-For-link">The Ultimate Boot Guide</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <a href="" class="class-For-link">F</a>
                             </li>
-                            <li class="class-For-Find-List" id="Ultimate-Boot">
-                                <a href="" class="class-For-link">The Ultimate Boot Guide</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <a href="" class="class-For-link">G</a>
                             </li>
-                            <li class="class-For-Find-List" id="Best-Coats">
-                                <a href="" class="class-For-link">Best Coats for Bundling Up</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <a href="" class="class-For-link">H</a>
                             </li>
-                            <li class="class-For-Find-List" id="New-Arrivals">
-                                <a href="" class="class-For-link">The Find New Arrivals</a>
+                            <li class="class-For-B-List" id="v">
+                                <a href="" class="class-For-link">I</a>
                             </li>
-                        </ul>
-                    </span>
-                </span>
-                <span id="The-Style-Room">
-                    <span id="Style-Room-Box">
-                        <ul id="Find-List" style="margin: 0%;">
-                            <li id="Style-Room" class="class-Head-List">
-                                <a href="" >The Style Room</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <a href="" class="class-For-link">J</a>
                             </li>
-                            <li class="class-For-Room-Style-List" id="Jewelry">
-                                <a href="">Jewelry Moments with Pandora</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <a href="" class="class-For-link">K</a>
                             </li>
-                            <li class="class-For-Room-Style-List" id="Hunter">
-                                <a href="">Brand Spotlight: Hunter</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <a href="" class="class-For-link">L</a>
                             </li>
-                            <li class="class-For-Room-Style-List" id="Party">
-                                <a href="">The Party Edit</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <a href="" class="class-For-link">M</a>
                             </li>
-                            <li class="class-For-Room-Style-List" id="Bags">
-                                <a href="">Interesting Bags</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <a href="" class="class-For-link">N</a>
                             </li>
-                            <li class="class-For-Room-Style-List" id="Suede">
-                                <a href="">Leather & Suede</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <a href="" class="class-For-link">O</a>
                             </li>
-                            <li class="class-For-Room-Style-List" id="Men-Party">
-                                <a href="">Men’s Party Expression</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <a href="" class="class-For-link">P</a>
                             </li>
-                            <li class="class-For-Room-Style-List" id="Men-Winter">
-                                <a href="">Men’s Winter Collection</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <a href="" class="class-For-link">Q</a>
                             </li>
-                            <li class="class-For-Room-Style-List" id="Men-Leather">
-                                <a href="">Men’s Leather Liaison</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <a href="" class="class-For-link">R</a>
                             </li>
-                        </ul>
-                    </span>
-                </span>
-                <span id="The-New-Brands">
-                    <span id="New-Brands-Box" class="class-For-span-float" style="padding: 1%;">
-                        <ul id="New-Brands-List" class="class-For-a-Style" style="margin: 0%;">
-                            <li id="New-Brands" class="class-Head-List">
-                                <a href="" >New Brands</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <a href="" class="class-For-link">S</a>
                             </li>
-                            <li class="class-For-select-List" id="Fitch">
-                                <a href="">Abercrombie & Fitch</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <a href="" class="class-For-link">T</a>
                             </li>
-                            <li class="class-For-select-List" id="Carbon38">
-                                <a href="">Carbon38</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <a href="" class="class-For-link">U</a>
                             </li>
-                            <li class="class-For-select-List" id="Madewell">
-                                <a href="">Madewell</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <a href="" class="class-For-link">V</a>
                             </li>
-                            <li class="class-For-select-List" id="Shoes">
-                                <a href="">Xero Shoes</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <a href="" class="class-For-link">W</a>
                             </li>
-                            <li class="class-For-select-List" id="JEN7">
-                                <a href="">JEN7</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <a href="" class="class-For-link">Y</a>
                             </li>
-                            <li class="class-For-select-List" id="Universal">
-                                <a href="">UGG® Universal</a>
-                            </li>
-                            <li class="class-For-select-List" id="Havana">
-                                <a href="">Vintage Havana Kids</a>
-                            </li>
-                            <li class="class-For-select-List" id="Barefoot">
-                                <a href="">Barefoot Dreams</a>
-                            </li>
-                            <li class="class-For-select-List" id="Lee">
-                                <a href="">Lee</a>
-                            </li>
-                            <li class="class-For-select-List" id="BRABAR">
-                                <a href="">BRABAR</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <a href="" class="class-For-link">Z</a>
                             </li>
                         </ul>
-                    </span>
-                </span>
-                <span id="The-New-Arrivals">
-                    <span id="New-Arrivals-Box" class="class-For-span-float">
-                        <ul id="New-Arrivals-List" class="class-For-a-Style" style="margin: 0%;">
-                            <li id="New-Arrivals" class="class-Head-List">
-                                <a href="" >New Arrivals</a>
+                    </div>
+                </div>
+                <hr style="width: 80%;margin-left: 10%;"/>
+                <div id="" >
+                    <div id="">
+                        <ul id="ul_top_hypers" style="margin: 0%;padding-left: 7%; padding-top: 1%;">
+                            <li id="Find" class="class-Head-List">
+                                <a href="">Featured Brands</a>
                             </li>
-                            <li class="class-For-select-List" id="Candles">
-                                <a href="">Candles</a>
+                            <br>
+                            <br>
+
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <img class="class-For-link" src="https://m.media-amazon.com/images/G/01/2020/trendingbrandlogos/TNFfeaturedbrandslogo.png">
                             </li>
-                            <li class="class-For-select-List" id="Entertainment">
-                                <a href="">Dining & Entertainment</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <img class="class-For-link" src="https://m.media-amazon.com/images/G/01/2021/dr-martens/drmartens-brand-index-logo.jpg">
                             </li>
-                            <li class="class-For-select-List" id="Blankets">
-                                <a href="">Bedding & Blankets</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <img class="class-For-link" src="https://m.media-amazon.com/images/G/01/2020/trendingbrandlogos/crocs-brand-index-logo.jpg">
                             </li>
-                            <li class="class-For-select-List" id="Mickey">
-                                <a href="">Hunter Meets Mickey</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <img class="class-For-link" src="https://m.media-amazon.com/images/G/01/2021/brandindex/hoka-brand-index-logo.jpg">
                             </li>
-                            <li class="class-For-select-List" id="Jordan">
-                                <a href="">Kids' Nike & Jordan Styles</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <img class="class-For-link" src="https://m.media-amazon.com/images/G/01/2021/brandindex/converse-brand-index-logo.jpg">
                             </li>
-                            <li class="class-For-select-List" id="Games">
-                                <a href="">Toys & Games</a>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <img class="class-For-link" src="https://m.media-amazon.com/images/G/01/2021/brandindex/hoka-brand-index-logo.jpg">
                             </li>
+                            <li class="class-For-B-List" id="New-Arrivals">
+                                <img class="class-For-link" src="https://m.media-amazon.com/images/G/01/2021/brandindex/adidas-brand-index-logo.jpg">
+                            </li>
+                      
                         </ul>
-                    </span>
-                </span>
-                <hr class="vertical"/>
-                <i id="close-New" class="fas fa-times"></i> 
-                <div class="class-For-span-float offers">
-                    <span id="first-Offer">
-                        <img id="Offer-img" src="https://m.media-amazon.com/images/G/01/2021/Global-Nav/December/COOP-ASICS-GT2000-GLOBAL-350x350.jpg">
-                        <button id="Shop-All-New">Shop All New</button>
-                    </span>
-                    <br><br>
-                    <span id="second-Offer">
-                        <img id="Offer-img" src="https://m.media-amazon.com/images/G/01/2021/Global-Nav/December/COOP-ASICS-GT2000-GLOBAL-350x350.jpg">
-                        <button id="Shop-New">Shop All New</button>
-                    </span>
+                    </div>
                 </div>
             </div>
             <div id="Sale-Category" class="Category">
@@ -1153,7 +1245,7 @@
                     </span>
                 </span>
                 <hr class="vertical"/>
-                <i id="close-New" class="fas fa-times"></i> 
+                <i id="close-New7" class="fas fa-times c7"></i> 
                 <div class="class-For-span-float offers">
                     <span id="first-Offer">
                         <img id="Offer-img" src="https://m.media-amazon.com/images/G/01/2021/Global-Nav/December/COOP-ASICS-GT2000-GLOBAL-350x350.jpg">
@@ -1307,7 +1399,7 @@
                     </span>
                 </span>
                 <hr class="vertical"/>
-                <i id="close-New" class="fas fa-times"></i> 
+                <i id="close-New8" class="fas fa-times c8"></i> 
                 <div class="class-For-span-float offers">
                     <span id="first-Offer">
                         <img id="Offer-img" src="https://m.media-amazon.com/images/G/01/2021/Global-Nav/December/COOP-ASICS-GT2000-GLOBAL-350x350.jpg">
@@ -1341,7 +1433,7 @@
                 </div>
                 <div style="clear:both"></div>
             </div>
-            <div id="carouselExampleControls" class="carousel slide text-center" data-bs-ride="carousel">
+            <div id="carouselExampleControls" style="z-index: 0;" class="carousel slide text-center" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     FREE 365 Day Returns and Exchanges!
@@ -1353,11 +1445,11 @@
                     Be the first to shop the newest blankets, pillows, drinkware & more—all on Zappos!
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <button class="carousel-control-prev" style="z-index: 0;" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <button class="carousel-control-next" style="z-index: 0;" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
@@ -1611,6 +1703,7 @@
                     </div>
                 </div>
             </footer>
+            <script src="JS/Search.js"></script>
             <script src="JS/HomeJavaScript.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         </body>

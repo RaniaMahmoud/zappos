@@ -36,6 +36,7 @@ var ClothingCategorys=document.getElementById("Clothing-Category");
 var card=document.getElementById("btn-cart")
 //var IconClose=document.querySelectorAll(".fa-times")
 var IconClose=document.querySelectorAll(".fa-times")
+
 var overlay=document.querySelector(".overlay")
 var btnSearch=document.querySelector("#btn-search")
 
@@ -57,11 +58,17 @@ var TimeOfSetAdv;
 NewBtn.addEventListener("click",ShowNew)
 //
 //item.addEventListener("click",CloseAll())
-
+/*
 for(let item of IconClose){
-    item.addEventListener("click",CloseAll)
-}
-
+    item.addEventListener("click",CloseAll);
+    console.log(item)
+}*/
+IconClose.forEach(item => {
+    item.addEventListener("click",function(){
+        CloseAll();
+    });
+    console.log(item)
+});
 WomenBtn.addEventListener("click",ShowWomen)
 
 MenBtn.addEventListener("click",ShowMen)
@@ -181,6 +188,7 @@ function ShowWomen(){
 function HideWomen(){
     WomenCategorys.style.display="none"
     overlay.style.display="none"
+    //alert("CloseW");
 
     iconWomen.style.transform="rotate(360deg)";
     WomenBtn.setAttribute("data-click","0");
@@ -200,18 +208,24 @@ function ShowMen(){
         overlay.style.display="block"
         MenCategorys.style.display="block";
         MenBtn.setAttribute("data-click","1");
+        //console.log(MenBtn.getAttribute("data-click"))
     }
     else{
         HideMen()
+        //console.log(MenBtn.getAttribute("data-click"))
     }
 }
 
 function HideMen(){
     MenCategorys.style.display="none"
     overlay.style.display="none"
+    //console.log(MenBtn.getAttribute("data-click")+"b")
+    //alert("CloseM");
 
     iconMen.style.transform="rotate(360deg)";
-    NewBtn.setAttribute("data-click","0");
+    MenBtn.setAttribute("data-click","0");
+    //console.log(MenBtn.getAttribute("data-click")+"b2")
+
 }
 
 function Showkids(){
@@ -237,7 +251,7 @@ function Showkids(){
 function Hidekids(){
     KidsCategorys.style.display="none"
     overlay.style.display="none"
-
+    //alert("CloseK");
     iconkids.style.transform="rotate(360deg)";
     kidsBtn.setAttribute("data-click","0");
 }
@@ -265,7 +279,7 @@ function ShowDepartments(){
 function HideDepartments(){
     DepartmentsCategorys.style.display="none"
     overlay.style.display="none"
-
+    //alert("CloseD");
     iconDepartments.style.transform="rotate(360deg)";
     DepartmentsBtn.setAttribute("data-click","0");
 }
@@ -293,7 +307,7 @@ function ShowBrands(){
 function HideBrands(){
     BrandsCategorys.style.display="none"
     overlay.style.display="none"
-
+    //alert("CloseB");
     iconBrands.style.transform="rotate(360deg)";
     BrandsBtn.setAttribute("data-click","0");
 }
@@ -321,7 +335,7 @@ function ShowSale(){
 function HideSale(){
     SaleCategorys.style.display="none"
     overlay.style.display="none"
-
+    //alert("CloseS");
     iconSale.style.transform="rotate(360deg)";
     SaleBtn.setAttribute("data-click","0");
 }
@@ -349,20 +363,21 @@ function ShowClothing(){
 function HideClothing(){
     ClothingCategorys.style.display="none"
     overlay.style.display="none"
-
+    //alert("CloseC");
     iconClothing.style.transform="rotate(360deg)";
     ClothingBtn.setAttribute("data-click","0");
 }
 
 function CloseAll(){
-    HideMen()
-    HideNew()
-    HideBrands()
-    HideClothing()
-    HideDepartments()
-    HideSale()
-    Hidekids()
-    HideWomen()
+    //alert("Close");
+    HideMen();
+    HideNew();
+    HideBrands();
+    HideClothing();
+    HideDepartments();
+    HideSale();
+    Hidekids();
+    HideWomen();
 }
 
 function zoom(){

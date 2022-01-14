@@ -19,24 +19,24 @@
         </head>
         <body>
             <header id="Home-Page-Header">
-                    <div id="Logo">
-                        <a href="index.html">
-                            <img src="https://m.media-amazon.com/images/G/01/zappos/melody/zapposPBS._CB1509642213_.svg" name="Zappos" id="Zappos" alt="Zappos" height="50">
-                        </a>
+                <div id="Logo">
+                    <a href="index.html">
+                        <img src="https://m.media-amazon.com/images/G/01/zappos/melody/zapposPBS._CB1509642213_.svg" name="Zappos" id="Zappos" alt="Zappos" height="50">
+                    </a>
+                </div>
+                <div id="search">
+                    <div id="itemSearch" class="">
+                        <i class="fas fa-search"></i>
+                        <input type="search" id="searchBox" name="search" placeholder="Search for shoes, clothes, etc." autocomplete="off">
                     </div>
-                    <div id="search">
-                        <div id="itemSearch">
-                            <i class="fas fa-search"></i>
-                            <input type="search" id="searchBox" name="search" placeholder="Search for shoes, clothes, etc." autocomplete="off">
-                        </div>
-                    </div>
-                    <div id="search-Button">
-                        <button id="btn-search">Search</button>
-                    </div>
-                    <div id="Cart-box">
-                        <button id="btn-cart"><i class="fas fa-shopping-cart" id="shopping-cart"></i> &nbsp;&nbsp;MY CART</button>
-                    </div>
-                    <div style="clear:both"></div>
+                </div>
+                <div id="search-Button">
+                    <button id="btn-search">Search</button>
+                </div>
+                <div id="Cart-box">
+                    <button id="btn-cart"><i class="fas fa-shopping-cart" id="shopping-cart"></i> &nbsp;&nbsp;MY CART</button>
+                </div>
+                <div style="clear:both"></div>
             </header>
             <div style="clear:both"></div>
 
@@ -1347,7 +1347,7 @@
                 </div>
                 <div style="clear:both"></div>
             </div>
-            <div id="carouselExampleControls" class="carousel slide text-center" data-bs-ride="carousel">
+            <div id="carouselExampleControls" style="z-index: 0;" class="carousel slide text-center" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     FREE 365 Day Returns and Exchanges!
@@ -3009,6 +3009,7 @@
                     </div>
                 </div>
             </footer>
+            <script src="JS/Search.js"></script>
             <script src="Jquery/Items.js"></script>
             <script src="JS/HomeJavaScript.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

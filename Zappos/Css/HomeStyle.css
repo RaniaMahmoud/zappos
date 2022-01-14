@@ -174,6 +174,8 @@ input[type="search"]{
     background-color: #fff;/*    background: #fff;    */
     border: 1px solid #ddd;
     display: none;
+    z-index: 1;
+
 }
 #Women-Category{
     position: absolute;
@@ -184,6 +186,8 @@ input[type="search"]{
     background-color: #fff;/*    background: #fff;    */
     border: 1px solid #ddd;
     display: none;
+    z-index: 1;
+
 }
 #Men-Category{
     position: absolute;
@@ -194,16 +198,20 @@ input[type="search"]{
     background-color: #fff;/*    background: #fff;    */
     border: 1px solid #ddd;
     display: none;
+    z-index: 1;
+
 }
 #Kids-Category{
     position: absolute;
-    margin-left: 220;
+    margin-left: 235;
     border: 1%;
     width: 80%;
     height: 85%;
     background-color: #fff;/*    background: #fff;    */
     border: 1px solid #ddd;
     display: none;
+    z-index: 1;
+
 }
 #Departments-Category{
     position: absolute;
@@ -214,16 +222,20 @@ input[type="search"]{
     background-color: #fff;/*    background: #fff;    */
     border: 1px solid #ddd;
     display: none;
+    z-index: 1;
+
 }
 #Brands-Category{
     position: absolute;
-    margin-left: 304;
+    left: 400;
     border: 1%;
-    width: 80%;
-    height: 85%;
+    width: 50%;
+    height: 55%;
     background-color: #fff;/*    background: #fff;    */
     border: 1px solid #ddd;
     display: none;
+    z-index: 1;
+
 }
 #Sale-Category{
     position: absolute;
@@ -234,6 +246,8 @@ input[type="search"]{
     background-color: #fff;/*    background: #fff;    */
     border: 1px solid #ddd;
     display: none;
+    z-index: 1;
+
 }
 #Clothing-Category{
     position: absolute;
@@ -244,6 +258,7 @@ input[type="search"]{
     background-color: #fff;/*    background: #fff;    */
     border: 1px solid #ddd;
     display: none;
+    z-index: 1;
 }
 #Style-Room-Box{
     float:left;
@@ -295,6 +310,7 @@ li#New-Arrivals a:hover{
 .class-For-Find-List{
     padding-top: 10%;
 }
+
 li.class-For-Find-List a:hover{
     border-bottom: 2px solid #0f1011;    /*For Hover*/
 }
@@ -316,6 +332,7 @@ li.class-For-select-List a:hover{
     padding: 2%;
     font-size: 120%;
     cursor: pointer;
+    
 }
 .class-For-span-float{
     float: left;
@@ -383,7 +400,8 @@ width: 200px;
     width: 100%;
     height: 8%;
     display: flex;
-    flex-direction:row
+    flex-direction:row;
+    z-index: 0;
 }
 #carouselExampleControls{
     background-color: #bed7f5;
@@ -595,4 +613,81 @@ ul#Explore-Zappos-List a:hover{
 }
 #Div-EmailBox{
     height: 10%;
+}
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+  
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+}
+  
+  /*when hovering an item:*/
+.autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+}
+  
+  /*when navigating through the items using the arrow keys:*/
+/*.autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+}*/
+.Search-items{
+    color: #003953;
+    text-decoration:none;
+}
+#ul_top_hypers li {
+    display: inline;
+}
+#ul_top_hypers li a{
+    text-decoration: none;
+    color: #003953;
+}
+.class-For-B-List{
+    padding: 0.7%;
+}
+
+#exampleModal{
+}
+.model-content{
+    color: #1f1f1f;
+    font: 600 18px Open Sans,sans-serif;
+}
+/* justify-content-center|justify-content-end */
+
+.sigBtn{
+    border: 1px solid #003953;
+    color: #003953;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+#exampleModalLabel{
+    font-weight: 600;
+    color: #003953;
+}
+.sigBtnLast{
+    color: #003953;
+    border: 1px solid #003953;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.footContent{
+    margin-right: 55%;
+}
+.sigBtn:hover{
+    color: #fff;
+    background-color: #035d59;
+    border: 1px solid #000;
 }
