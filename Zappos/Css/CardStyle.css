@@ -1,0 +1,724 @@
+*{
+    box-sizing: border-box;  
+  }
+  body{
+      height: 100%;
+      width: 100%;
+      margin: 0%;
+      box-sizing: border-box; 
+      font-family: hm sans regular,hm sans arabic regular,"sans-serif",arial;
+      color: #222; 
+  }
+  #Home-Page-Header{
+      width: 100%;
+      background-color: #fff;
+      height: 12%;
+      box-sizing: border-box;  
+  }
+  
+  #Logo{
+      float: left;
+      width: 20%;
+      margin: 1.2% 0% 2% 2%;
+      margin-bottom: 0px;
+  
+  }
+  #search{
+      position: absolute;
+      float: left;
+      width: 30%;
+      margin: 1.7% 0% 0% 12%;
+      box-sizing: border-box;  
+      height: 5.5%;
+  }
+  #searchBox{
+      width: 100%;
+      margin: 1% 0% 0% 0%;
+      height: 100%;
+      box-sizing: border-box;  
+  }
+  #search-Button{
+      float: left;
+      width: 20%;
+      margin: 2% 0% 2% 0%;
+      height: 100%;
+      margin-bottom: 0px;
+  }
+  
+  #Cart-box{
+      float: right;
+      width: 20%;
+      margin: 1.5% 0% 2% 0%;
+      margin-bottom: 0px;
+  }
+  
+  input[type="search"]{
+      border: 1px solid #222;
+      color: #222;
+      width: 100%;
+      outline: none;
+      height: 9%;
+      background: transparent;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border: none;
+      border: 1px solid rgb(207, 204, 204);
+      text-indent: 10%;
+  }
+  .fa-search{
+      position: absolute;
+      font-size: 110%;
+      transform: translate(60%,90%);
+      opacity: 0.5;
+      float: left;
+  }
+  
+  #search-button{
+      transform: translate(100%,0%);
+      height: 50%;
+  }
+  #btn-search{
+      background-color: #0c042b;
+      color: white;
+      padding: 1% 1%;
+      margin: 0% 0%;
+      height: 90%;
+      border: none;
+      cursor: pointer;
+      width: 30%;
+      opacity: 0.9;
+      font-size: medium;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      font-size: large;
+      font-weight: bold;
+  }
+  #btn-cart{
+      margin: 0% 0% 0% 40%;
+      height: 50%;
+      border: none;
+      cursor: pointer;
+      width: 30%;
+      /* background-color: #b3d4fc; */ /*forHover*/
+      background: transparent;
+      color: #035d59;
+      background-color: #fff;
+      border-radius: 5px;
+      border: 2px solid #a7e688;
+      width: 130px;  
+      text-align: center; 
+      font-weight: bold;
+  }
+  #shopping-cart{
+      font-size: 15px;
+  }
+  #section-one{
+      color: #222;
+      background-color:#e9eef5;
+      padding-top: 1%;
+      padding-left: 0%;
+      margin: 0% 0% 0% 0%;
+      height: 7%;
+      margin-top: 0;
+  }
+  
+  #section-one div{
+      display: inline;
+  }
+  
+  #New{
+      margin-left: 2.5%;
+  }
+  #women{
+      margin-left: 1%;
+  }
+  #men{
+      margin-left: 1%;
+  }
+  #kids{
+      margin-left: 1%;
+  }
+  #Departments{
+      margin-left: 1%;
+  }
+  #Brands{
+      margin-left: 1%;
+  }
+  #sale{
+      margin-left: 1%;
+  }
+  #Clothing{
+      margin-left: 1%;
+  }
+  #SignIn{
+      margin-left: 40%;
+  }
+  #section-one a{
+      color:inherit;
+      text-decoration:none;
+      padding-bottom: 0.2%;
+      /* border-bottom: 3px solid black; */
+  }
+  #section-one a:hover{
+      color:inherit;
+      text-decoration:none;
+      padding-bottom: 0.8%;
+      border-bottom: 2px solid black;
+  }
+  #New-Category{
+      position: absolute;
+      margin-left: 1%;
+      border: 1%;
+      width: 80%;
+      height: 85%;
+      background-color: #fff;/*    background: #fff;    */
+      border: 1px solid #ddd;
+      display: none;
+      z-index: 1;
+  
+  }
+  #Women-Category{
+      position: absolute;
+      margin-left: 4%;
+      border: 1%;
+      width: 80%;
+      height: 85%;
+      background-color: #fff;/*    background: #fff;    */
+      border: 1px solid #ddd;
+      display: none;
+      z-index: 1;
+  
+  }
+  #Men-Category{
+      position: absolute;
+      margin-left: 160;
+      border: 1%;
+      width: 80%;
+      height: 85%;
+      background-color: #fff;/*    background: #fff;    */
+      border: 1px solid #ddd;
+      display: none;
+      z-index: 1;
+  
+  }
+  #Kids-Category{
+      position: absolute;
+      margin-left: 235;
+      border: 1%;
+      width: 80%;
+      height: 85%;
+      background-color: #fff;/*    background: #fff;    */
+      border: 1px solid #ddd;
+      display: none;
+      z-index: 1;
+  
+  }
+  #Departments-Category{
+      position: absolute;
+      margin-left: 280;
+      border: 1%;
+      width: 80%;
+      height: 85%;
+      background-color: #fff;/*    background: #fff;    */
+      border: 1px solid #ddd;
+      display: none;
+      z-index: 1;
+  
+  }
+  #Brands-Category{
+      position: absolute;
+      left: 400;
+      border: 1%;
+      width: 50%;
+      height: 55%;
+      background-color: #fff;/*    background: #fff;    */
+      border: 1px solid #ddd;
+      display: none;
+      z-index: 1;
+  
+  }
+  #Sale-Category{
+      position: absolute;
+      margin-left: 304;
+      border: 1%;
+      width: 80%;
+      height: 85%;
+      background-color: #fff;/*    background: #fff;    */
+      border: 1px solid #ddd;
+      display: none;
+      z-index: 1;
+  
+  }
+  #Clothing-Category{
+      position: absolute;
+      margin-left: 303;
+      border: 1%;
+      width: 80%;
+      height: 85%;
+      background-color: #fff;/*    background: #fff;    */
+      border: 1px solid #ddd;
+      display: none;
+      z-index: 1;
+  }
+  #Style-Room-Box{
+      float:left;
+  }
+  #The-Find{
+      float:left;
+  }
+  ul{
+      list-style: none;
+      padding-top: 17%;
+  }
+  #Find-List a{
+      color:inherit;
+      text-decoration:none;
+      padding-bottom: 0.2%;
+      /* border-bottom: 3px solid black; */
+  }
+  /* #Find a{
+      font-size: medium;
+      font-weight: bold;
+      color: #003953;    
+      border-bottom: 2px solid #b3d4fc;    
+      For Hover
+  }
+  */
+  li.class-Head-List a{
+      color: #003953;    
+      font-size: medium;
+      font-weight: bold;
+      /*border-bottom: 2px solid #b3d4fc;*/     /*For Hover*/
+  }
+  li#Find a:hover{
+      border-bottom: 2px solid #b3d4fc;
+      color: #b3d4fc; 
+  }
+  li#Style-Room a:hover{
+      border-bottom: 2px solid #b3d4fc;
+      color: #b3d4fc; 
+  }
+  li#New-Brands a:hover{
+      border-bottom: 2px solid #b3d4fc;
+      color: #b3d4fc; 
+  }
+  li#New-Arrivals a:hover{
+      border-bottom: 2px solid #b3d4fc;
+      color: #b3d4fc; 
+  }
+  
+  .class-For-Find-List{
+      padding-top: 10%;
+  }
+  
+  li.class-For-Find-List a:hover{
+      border-bottom: 2px solid #0f1011;    /*For Hover*/
+  }
+  .class-For-Room-Style-List{
+      padding-top: 10%;
+  }
+  li.class-For-Room-Style-List a:hover{
+      border-bottom: 2px solid #0f1011;    /*For Hover*/
+  }
+  .class-For-select-List{
+      padding-top: 10%;
+  }
+  li.class-For-select-List a:hover{
+      padding-top: 10%;
+      border-bottom: 2px solid #0f1011;    /*For Hover*/
+  }
+  .fa-times{
+      float: right;
+      padding: 2%;
+      font-size: 120%;
+      cursor: pointer;
+      
+  }
+  .class-For-span-float{
+      float: left;
+      padding-top: 0%;
+  }
+  .class-For-a-Style a{
+      color:inherit;
+      text-decoration:none;
+      padding-bottom: 0.2%;
+      /* border-bottom: 3px solid black; */
+  }
+  .vertical{
+      float: left;
+      margin: 2%;
+      margin-top: 4%;
+      color: red;
+      height: 88%;
+      width: 0%;
+  }
+  .offers{
+      width: 16.5%;
+      margin-top: 0%;
+  }
+  #first-Offer{
+      width: 1%;
+      height: 1%;
+      background-color: #0c042b;
+  }
+  #Offer-img{
+  height: 200px;
+  width: 200px;
+  }
+  #first-Offer button{
+      width: 100%;
+      height: 8%;
+      text-align: center;
+      background-color: #0f1011;
+      color: white;
+      font-weight:bold;
+  
+  }
+  #second-Offer button{
+      width: 100%;
+      height: 8%;
+      text-align: center;
+      background-color: #0f1011;
+      color: white;
+      font-weight:bold;
+  
+  }
+  #section-Two{
+      position: none;
+  }
+  .overlay{
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: auto;
+      width: 100%;
+      background-color: rgba(0,0,0,0.5);
+  }
+  #Advertising{
+      background-color: #bed7f5;
+      width: 100%;
+      height: 8%;
+      display: flex;
+      flex-direction:row;
+      z-index: 0;
+  }
+  #carouselExampleControls{
+      background-color: #bed7f5;
+      max-width: 100%;
+      padding: 1%;
+      height: 8%;
+  }
+  #Advertis-1,#Advertis-2,#Advertis-3{
+      text-align: center;
+      margin-top: 17;
+      cursor: text;
+  }
+  .fa-chevron-left ,.fa-chevron-right{
+      font-size: x-large;
+      position: static;
+      color:#222 ;
+      margin: 15;
+      cursor: pointer;
+  }
+  #Advertis-1{
+      display: block;
+      
+  }
+  #Advertis-2{
+      display: none;
+  }
+  #Advertis-3{
+      display: none;
+  }
+  .fade {
+      animation-name: fade;
+      animation-duration: 1s;
+    }
+      
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+  
+    .FooterStyle{
+        color: #fff;
+        background-color: #011b27;
+        padding-left: 5%;
+        padding-top: 1.5%;
+    }
+  #inBox{
+      font-weight: bold;
+  }
+  #EmailBox{
+      margin-top: 2%;
+  }
+    
+  #SignUpToDayBtn{
+      background-color: transparent;
+      border: 2px solid #fff;
+      font-weight: bold;
+  }
+  #Footer-Section-two{
+      background-color: #003953;
+  }
+  
+  #col-one{
+      padding-left: 3%;
+  }
+  #col-two{
+      padding-left: 11%;
+  }
+  #col-three{
+      padding-left: 12%;
+  }
+  #col-four{
+      padding-left: 12%;
+      margin-top: 2%;
+      max-width: 35%;
+      overflow-wrap: break-word;
+      color:#fff;    
+  
+  }
+  
+  #AskClinte{
+      overflow-wrap: break-word;
+      padding: 2%;
+  }
+  
+  #Explore-Zappos-List a{
+      text-decoration:none;
+      color:#fff;    
+  
+      /* border-bottom: 3px solid black; */
+  }
+  
+  li.class-Explore-Zappos-Head-List a{
+      color:#fff;    
+      font-size: medium;
+      font-weight: bold;
+      /*border-bottom: 2px solid #b3d4fc;*/     /*For Hover*/
+  }
+  
+  li.class-For-ExploreZappos-List{
+      color:#fff;    
+      margin-top: 8%;
+      font: 400 14px Open Sans,sans-serif;
+      /*border-bottom: 2px solid #b3d4fc;*/     /*For Hover*/
+  }
+  
+  ul#Explore-Zappos-List a:hover{
+      border-bottom: 1px solid #fafdff;
+  }
+  
+  .VoiceMatters-Content{
+      padding: 5%;
+      background-color: #144860;
+      border-radius: 3%;
+  }
+  
+  #VoiceMatters{
+      font-weight: 600;
+  }
+  
+  #takeSurvey{
+      background-color: #003953; 
+      color: #fff;
+      border-color: #fff; 
+      margin-top: 8%;
+      font-weight: 700;
+  }
+  
+  .ConnectUS{
+      margin-top: 8%;
+      font-size: x-large;
+      font-weight: 530;
+  }
+  .SiteForConnects{
+      font-size: 130%;
+  }
+  #tearms{
+      color: #fff;
+      padding-left: 5%;
+      margin-top: 2%;
+      font-weight: 100;
+  }
+  #tearms-two{
+      margin-left: 6;
+  }
+  .vl {
+      position: absolute;
+      border-left: 1px solid #fff;
+      height: 3%;
+      left: 11.7%;
+      top: 1400;
+  }
+  #tearms-two-vl div{
+      position: absolute;
+      border-left: 1px solid #fff;
+      height: 3%;
+      left: 19.2%;
+      top: 1400;
+  }
+  #tearms-three{
+      margin-left: 11;
+  
+  }
+  
+  #tearms-three-vl div{
+      position: absolute;
+      border-left: 1px solid #fff;
+      height: 3%;
+      left: 26%;
+      top: 1400;
+  }
+  #tearms-four{
+      margin-left: 11;
+  }
+  
+  #tearms-four-vl div{
+      position: absolute;
+      border-left: 1px solid #fff;
+      height: 3%;
+      left: 31.6%;
+      top: 1400;
+  }
+  #tearms-five{
+      margin-left: 15;
+  }
+  
+  #tearms-five-vl div{
+      position: absolute;
+      border-left: 1px solid #fff;
+      height: 3%;
+      left: 41.5%;
+      top: 1400;
+  }
+  .CpyWrite{
+      color: #fff;
+      padding-left: 5%;
+      margin-top: 1.5%;
+      padding-bottom: 2%;
+      font-weight: 100;    
+  }
+  #Line hr{
+      width: 100%;
+      margin-left: 4%;
+      margin-top: 2%;
+  
+  }
+  #tearms a:hover{
+      border-bottom: 1px solid #fafdff;
+      cursor: pointer;
+  }
+  #Div-EmailBox{
+      height: 10%;
+  }
+  .autocomplete-items {
+      position: absolute;
+      border: 1px solid #d4d4d4;
+      border-bottom: none;
+      border-top: none;
+      z-index: 99;
+      /*position the autocomplete items to be the same width as the container:*/
+      top: 100%;
+      left: 0;
+      right: 0;
+  }
+    
+  .autocomplete-items div {
+      padding: 10px;
+      cursor: pointer;
+      background-color: #fff; 
+      border-bottom: 1px solid #d4d4d4; 
+  }
+    
+    /*when hovering an item:*/
+  .autocomplete-items div:hover {
+      background-color: #e9e9e9; 
+  }
+    
+    /*when navigating through the items using the arrow keys:*/
+  /*.autocomplete-active {
+      background-color: DodgerBlue !important; 
+      color: #ffffff; 
+  }*/
+  .Search-items{
+      color: #003953;
+      text-decoration:none;
+  }
+  #ul_top_hypers li {
+      display: inline;
+  }
+  #ul_top_hypers li a{
+      text-decoration: none;
+      color: #003953;
+  }
+  .class-For-B-List{
+      padding: 0.7%;
+  }
+  
+  #exampleModal{
+  }
+  .model-content{
+      color: #1f1f1f;
+      font: 600 18px Open Sans,sans-serif;
+  }
+  /* justify-content-center|justify-content-end */
+  
+  .sigBtn{
+      border: 1px solid #003953;
+      color: #003953;
+      text-transform: uppercase;
+      font-weight: bold;
+  
+  }
+  #exampleModalLabel{
+      font-weight: 600;
+      color: #003953;
+  }
+  .sigBtnLast{
+      color: #003953;
+      border: 1px solid #003953;
+      font-weight: 600;
+      text-transform: uppercase;
+  }
+  .footContent{
+      margin-right: 55%;
+  }
+
+  .sigBtn:hover{
+      color: #fff;
+      background-color: #035d59;
+      border: 1px solid #000;
+  }
+  .ContinShopping{
+      text-decoration: none;
+      border-bottom:1px solid #003953;
+      color: #003953;
+
+  }
+  .checkoutbtn{
+      background-color: #a7e688;
+      border: #222;
+      color: #003953;
+      text-transform: uppercase;
+      font-weight: 550;
+
+  }
+  .Linktext{
+    text-decoration: none;
+    color: #003953;
+    font-weight: 600;
+  }
+  .ItemNum{
+    margin-top: 2%;
+    padding-left: 2.5%;
+    font-size: 1.9rem;
+    font-weight: bold;
+  }
+  /* <div class="row">
+  <div class="col-6">
+
+  </div>
+</div> */
